@@ -1,0 +1,207 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import "https://fonts.googleapis.com/css2?family=Sacramento&display=swap";
+body
+{
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+}
+
+h1
+{
+  color: #fc6203;
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.top_container h3
+{
+  color: #fc6203;
+  font-weight: normal;
+  margin: 0;
+  font-size: 20px;
+}
+
+div
+{
+  width:100%;
+}
+
+.top_container
+{
+  background-color: #e8f1f0;
+  height: auto;
+  padding-top: 75px;
+}
+
+.mid_containner p
+{
+  font-size: 3rem;
+}
+
+.bottom_container
+{
+  background: rgba(225,225,225,0.6);
+  margin: 0;
+  height: 150px;
+  width: 100%;
+}
+
+.profile
+{
+  width: 50%;
+  margin: 100px auto 100px auto;
+}
+
+.profile img
+{
+  height: 25%;
+  width: 25%;
+}
+
+.mountain
+{
+  position: relative;
+  top: auto;
+}
+
+.bottom_container p
+{
+  position: relative;
+  margin: 100px auto;
+}
+
+.bottom_container i
+{
+  height: 50px;
+  width: 50px;
+}
+
+.cloud
+{
+  position: absolute;
+}
+
+#cloud1
+{
+  top: 120px;
+  right: 20%;
+}
+
+#cloud2
+{
+  width: 200px;
+  top:250px;
+  left:25%;
+}
+
+.game-developement
+{
+  margin-right: 20%;
+  text-align: right;
+  width: 80%;
+}
+
+.website-developement
+{
+  margin-left: 20%;
+  text-align: Left;
+  width: 80%;
+  padding-bottom: 20px;
+}
+
+.desc
+{
+  display: inline-block;
+  width: 80%;
+  margin:25px;
+}
+
+.desc h3
+{
+  color: #00eeff;
+}
+
+.skills
+{
+  width: 100%;
+  height: 15%;
+}
+
+.skills h2
+{
+  margin-bottom: 35px;
+}
+
+.intro
+{
+  width: 40%;
+  margin: auto;
+}
+
+hr
+{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  margin: 50px auto;
+  width: 15%;
+}
+
+.links
+{
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fad82f;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ecfc3c;
+  text-decoration: none;
+  color: black;
+}
+
+.contact
+{
+  margin-bottom: 50px;
+}
+
+.Linkedin
+{
+  position: absolute;
+  margin: auto 60% auto 40%;
+  width: 25%;
+}
+
+.Facebook
+{
+  position: absolute;
+  margin: auto 40% auto 60%;
+  width: 25%;
+}
+.heading
+{
+
+    margin-left: 50px;
+    width: 25%;
+    margin-right: none;
+    position: absolute;
+
+}
+
+/*.bold
+{
+  font-weight: bold;
+}*/
