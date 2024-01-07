@@ -145,7 +145,14 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
   color: #b54769;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tab-contents ul li p{
+  font-size: 14px;
+  font-style: italic;
 }
 
 .tab-contents{
