@@ -18,13 +18,15 @@ This portfolio website provides an overview of my professional journey, skills, 
 portfolio-website/
 │
 ├── index.html              # Home page
-├── assets/                 # Images, stylesheets, and scripts
+├── assets/                 # Images, stylesheets, documents and scripts
 │   ├── css/
 │   │   └── style.css       # Main stylesheet
 │   ├── js/
 │   │   └── main.js         # Main JavaScript file
 │   └── img/                # Image files
+│   └── docs/               # Document files
 │
+├── CNAME                   # DNS record file
 ├── .gitignore              # Git ignore file
 └── README.md               # Project documentation
 ```
