@@ -25,6 +25,7 @@ portfolio-website/
 │   │   └── main.js         # Main JavaScript file
 │   └── img/                # Image files
 │   └── docs/               # Document files
+│   └── pages/              # Webpage files
 │
 ├── CNAME                   # DNS record file
 ├── .gitignore              # Git ignore file
