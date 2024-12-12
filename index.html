@@ -174,7 +174,7 @@
                 <i class="fab fa-facebook-square"></i>
               </a>
 
-              <a href="https://www.linkedin.com/in/soham-sur-970296148/">
+              <a href="https://www.linkedin.com/in/soham5sur/">
                 <i class="fab fa-linkedin"></i>
               </a>
 
@@ -187,9 +187,9 @@
 
           <div class="contact-right">
             <form name="msg-form">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea rows="6" name="message" placeholder="Your Message"></textarea>
+              <input type="text" id="name" placeholder="Your Name" required>
+              <input type="email" id="email" placeholder="Your Email" required>
+              <textarea rows="6" id="message" placeholder="Your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
             <span id="msg"></span>
@@ -202,7 +202,7 @@
     </div>
 
     <div class="copyright">
-      <p>© 2023 <a href="https://www.sohamsur.com/">Soham Sur</a></p>
+      <p>© 2024 <a href="https://www.sohamsur.com/">Soham Sur</a></p>
     </div>
 
 
@@ -240,15 +240,37 @@
 
     </script>
 
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
     <script>
       const form = document.forms['msg-form']
-      const msg = document.getElementById("msg")
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      const msgNoti = document.getElementById("msg")
+      var subject = "Contact Info:" +name;
+      var mailBody = 'Name: '+name+ '<br/> EmailID: '+email+'<br/> Message: '+message;
 
       form.addEventListener('submit',e => {
         e.preventDefault()
-        msg.innerHTML = "Message sent successfully!"
+
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "soham5sur@gmail.com",
+        Password : "jjthnxoatkadbgsn",
+        To : 'soham5sur@gmail.com',
+        From : email,
+        Subject : subject,
+        Body : mailBody
+    }).then(
+      message => alert(message)
+    );
+
+
+      msgNoti.innerHTML = "Message sent successfully!"
         setTimeout(function(){
-          msg.innerHTML = ""
+          msgNoti.innerHTML = ""
         },5000)
         form.reset()
       })
