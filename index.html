@@ -2,8 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Soham Sur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soham Sur - SDET & Software Developer with 5.6+ years of experience in test automation, quality assurance, and software development.">
+    <title>Soham Sur | SDET & Software Developer</title>
     <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/babd5c91fb.js" crossorigin="anonymous"></script>
   </head>
@@ -24,7 +29,7 @@
         </nav>
 
       <div class="header-text">
-        <p>Backend Developer & Automation Tester</p>
+        <p>SDET &amp; Software Developer</p>
         <h1>Hi, I am <span>Soham</span></h1>
         <h3>a programmer</h3>
 
@@ -44,8 +49,11 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1><br>
-            <p>I am a Programmer and Tester currently working at Deloitte US offices in India as Consultant
-              also I am an Computer Engineering Graduate currently residing at Hyderabad,Telengana.</p>
+            <p>Results-oriented <strong>SDET (Software Development Engineer in Test)</strong> with 5.8+ years of 
+              hands-on experience in software testing, automation, and quality assurance. Proficient in designing 
+              and implementing robust test automation frameworks, developing and executing comprehensive test plans, 
+              and identifying and documenting defects. Currently working as a <strong>Consultant at Deloitte</strong> 
+              in Hyderabad, India.</p>
 
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -54,12 +62,25 @@
             </div>
 
             <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Test Management</span><br>Software Testing</li>
-                <li><span>Test Automation</span><br>Software Testing</li>
-                <!-- <li><span>SQL</span><br>Software Development</li> -->
-                <li><span>CI/CD</span><br>Product Delivery</li>
-                <li><span>Git</span><br>Product Delivery</li>
+              <div class="skill-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="testing">Testing</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="tools">Tools &amp; DevOps</button>
+              </div>
+              <ul class="skills-grid">
+                <li data-category="testing"><span>Test Management</span><br>Strategy &amp; Planning</li>
+                <li data-category="testing"><span>Automation Testing</span><br>Selenium &amp; API (HTTP Client)</li>
+                <li data-category="testing"><span>Functional Testing</span><br>Manual &amp; Exploratory</li>
+                <li data-category="testing"><span>Performance Testing</span><br>JMeter</li>
+                <li data-category="development"><span>API Development</span><br>Spring Boot &amp; Python</li>
+                <li data-category="development"><span>SQL</span><br>MySQL &amp; Database</li>
+                <li data-category="development"><span>Python &amp; pytest</span><br>Automation &amp; Scripting</li>
+                <li data-category="development"><span>Java &amp; C#</span><br>Test Frameworks</li>
+                <li data-category="tools"><span>CI/CD</span><br>Jenkins &amp; Azure Pipelines</li>
+                <li data-category="tools"><span>Azure DevOps</span><br>Pipelines &amp; Boards</li>
+                <li data-category="tools"><span>ALM &amp; Jira</span><br>Test Management Tools</li>
+                <li data-category="tools"><span>Git</span><br>Version Control</li>
               </ul>
             </div>
 
@@ -105,20 +126,28 @@
         <div class="services-list">
           <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Backend Development</h2>
-            <p>Web Backend designing is the process of planning, conceptualizing, and implementing 
-              the plan for designing a business flow in a way that is functional and is easily 
-              integrated with a front-end.</p>
-              <a href="#">Learn More</a>
+            <h2>Software Development</h2>
+            <p>Building lightweight APIs and backend services using Spring Boot and Python. 
+              Experienced in developing automation utilities, CI/CD integration, and 
+              maintaining robust solutions for delivery support.</p>
+              <a href="assets/pages/development.html">Learn More</a>
           </div>
 
           <div>
             <i class="fa-solid fa-screwdriver-wrench"></i>
             <h2>Quality Assurance</h2>
-            <p>Quality Assurance (QA) is any systematic process of determining whether a 
-              product or service meets specified requirements. QA establishes and maintains 
-              set requirements for developing or manufacturing reliable products.</p>
+            <p>Designing and implementing test automation frameworks using Selenium, 
+              C#/NUnit, Java/TestNG, and Python/pytest. Comprehensive test strategy, 
+              performance testing with JMeter, and CI/CD pipeline integration.</p>
               <a href="assets/pages/qa.html">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-users-gear"></i>
+            <h2>Team Management</h2>
+            <p>Leading cross-functional teams, assigning work, monitoring daily activities, 
+              reporting progress to stakeholders, sprint planning, and preparing 
+              optimized test strategies for each release cycle.</p>
           </div>
 
           <!-- <div>
@@ -187,7 +216,7 @@
                 <i class="fa-brands fa-github"></i>
               </a>
             </div>
-            <a href="assets/docs/SohamSur_CV.pdf" download class="btn btn2">Download CV</a>
+            <a href="assets/docs/SohamSur.pdf" download class="btn btn2">Download CV</a>
           </div>
 
           <div class="contact-right">
@@ -207,7 +236,7 @@
     </div>
 
     <div class="copyright">
-      <p>© 2024 <a href="https://www.sohamsur.com/">Soham Sur</a></p>
+      <p>&copy; 2026 <a href="https://www.sohamsur.com/">Soham Sur</a>. All rights reserved.</p>
     </div>
 
 
@@ -245,42 +274,47 @@
 
     </script>
 
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
+    <script>
+      // Skill filter functionality
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.dataset.filter;
+          document.querySelectorAll('.skills-grid li').forEach(item => {
+            if (filter === 'all' || item.dataset.category === filter) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+    </script>
 
     <script>
       const form = document.forms['msg-form']
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
       const msgNoti = document.getElementById("msg")
-      var subject = "Contact Info:" +name;
-      var mailBody = 'Name: '+name+ '<br/> EmailID: '+email+'<br/> Message: '+message;
 
-      form.addEventListener('submit',e => {
+      form.addEventListener('submit', e => {
         e.preventDefault()
-
-        Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "soham5sur@gmail.com",
-        Password : "jjthnxoatkadbgsn",
-        To : 'soham5sur@gmail.com',
-        From : email,
-        Subject : subject,
-        Body : mailBody
-    }).then(
-      message => alert(message)
-    );
-
-
-      msgNoti.innerHTML = "Message sent successfully!"
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        const subject = encodeURIComponent("Portfolio Contact: " + name);
+        const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+        window.location.href = "mailto:soham5sur@gmail.com?subject=" + subject + "&body=" + body;
+        msgNoti.innerHTML = "Opening your email client..."
         setTimeout(function(){
           msgNoti.innerHTML = ""
-        },5000)
+        }, 5000)
         form.reset()
       })
-
     </script>
+
+    <!-- <script>
+      filterList = document
+    </script> -->
 
   </body>
 </html>
