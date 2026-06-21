@@ -808,7 +808,7 @@ section, #about, #services, #portfolio, #contact {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 4px;
   margin-top: 50px;
   background: var(--hairline);
@@ -910,6 +910,29 @@ section, #about, #services, #portfolio, #contact {
   z-index: 3;
   box-shadow: 0 2px 0 rgba(0,0,0,0.15);
   opacity: 0.95;
+}
+
+.work.no-stamp::after { content: none; }
+
+/* Hidden work items - initially hidden, shown on expand */
+.hidden-work {
+  display: none;
+}
+
+.hidden-work.show {
+  display: block;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ==========================================================================
@@ -1204,6 +1227,8 @@ nav .fas { display: none; }
   #header .header-text::after { font-size: 9px; }
 
   .sub-title { font-size: 44px; }
+
+  .work-list { grid-template-columns: 1fr; }
 
   .skills-grid { grid-template-columns: 1fr; }
 
